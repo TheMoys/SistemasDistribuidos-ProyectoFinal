@@ -1,0 +1,60 @@
+/* BoxPage.css */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .box-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .box-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .no-pokemon {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .pokemon-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pokemon-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .pokemon-card button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .pokemon-card button:hover {
+    background-color: #c82333;
+  }
