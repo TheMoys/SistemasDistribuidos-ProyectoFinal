@@ -1,13 +1,18 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
-const Navbar = () => (
-  <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/team">Equipo</Link></li>
-      <li><Link to="/box">Caja</Link></li>
-    </ul>
-  </nav>
-);
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo">Pokemon Team Manager</div>
+      <div className="menu">
+        <Link to="/">Home</Link>
+        <Link to="/team">Team</Link>
+        <Link to="/box">Box</Link>
+      </div>
+    </nav>
+  );
+}
 
 export default Navbar;

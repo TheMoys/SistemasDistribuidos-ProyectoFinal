@@ -1,55 +1,128 @@
 /* HomePage.css */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-
-.home-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
 }
 
 .pokemon-card {
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #ccc;
+  padding: 1rem;
   border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  width: 150px;
   text-align: center;
+  width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #f9f9f9;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pokemon-card img {
   width: 100px;
   height: 100px;
+  margin-bottom: 1rem;
 }
 
-.pokemon-card h3 {
-  font-size: 1.2rem;
-  margin: 10px 0;
+.pokemon-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.pokemon-card p {
+  margin: 0.5rem 0;
+  color: #666;
 }
 
 .pokemon-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
   background-color: #007bff;
   color: white;
-  border: none;
-  padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
-  margin: 5px;
+  transition: background-color 0.2s;
 }
 
 .pokemon-card button:hover {
   background-color: #0056b3;
+}
+
+/* Colores de fondo según el tipo de Pokémon */
+.pokemon-card.Planta {
+  background-color: #78C850;
+}
+
+.pokemon-card.Veneno {
+  background-color: #A040A0;
+}
+
+.pokemon-card.Fuego {
+  background-color: #F08030;
+}
+
+.pokemon-card.Volador {
+  background-color: #A890F0;
+}
+
+.pokemon-card.Agua {
+  background-color: #6890F0;
+}
+
+.pokemon-card.Bicho {
+  background-color: #A8B820;
+}
+
+.pokemon-card.Normal {
+  background-color: #A8A878;
+}
+
+.pokemon-card.Electrico {
+  background-color: #F8D030;
+}
+
+.pokemon-card.Tierra {
+  background-color: #E0C068;
+}
+
+.pokemon-card.Hielo {
+  background-color: #98D8D8;
+}
+
+.pokemon-card.Lucha {
+  background-color: #C03028;
+}
+
+.pokemon-card.Psiquico {
+  background-color: #F85888;
+}
+
+.pokemon-card.Roca {
+  background-color: #B8A038;
+}
+
+.pokemon-card.Fantasma {
+  background-color: #705898;
+}
+
+.pokemon-card.Dragon {
+  background-color: #7038F8;
+}
+
+.pokemon-card.Siniestro {
+  background-color: #705848;
+}
+
+.pokemon-card.Acero {
+  background-color: #B8B8D0;
+}
+
+.pokemon-card.Hada {
+  background-color: #EE99AC;
 }

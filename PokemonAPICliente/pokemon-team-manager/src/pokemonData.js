@@ -1,0 +1,185 @@
+// pokemonData.js
+const pokemonData = [
+    {
+      id: 1,
+      nombre: "Bulbasaur",
+      nivel: 5,
+      tipo: ["Planta", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      ataques: ["Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno"]
+    },
+    {
+      id: 2,
+      nombre: "Ivysaur",
+      nivel: 16,
+      tipo: ["Planta", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      ataques: ["Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno"]
+    },
+    {
+      id: 3,
+      nombre: "Venusaur",
+      nivel: 32,
+      tipo: ["Planta", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      ataques: ["Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno"]
+    },
+    {
+      id: 4,
+      nombre: "Charmander",
+      nivel: 5,
+      tipo: ["Fuego"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      ataques: ["Arañazo", "Gruñido", "Ascuas", "Lanzallamas"]
+    },
+    {
+      id: 5,
+      nombre: "Charmeleon",
+      nivel: 16,
+      tipo: ["Fuego"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      ataques: ["Arañazo", "Gruñido", "Ascuas", "Lanzallamas"]
+    },
+    {
+      id: 6,
+      nombre: "Charizard",
+      nivel: 36,
+      tipo: ["Fuego", "Volador"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      ataques: ["Arañazo", "Gruñido", "Ascuas", "Lanzallamas"]
+    },
+    {
+      id: 7,
+      nombre: "Squirtle",
+      nivel: 5,
+      tipo: ["Agua"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      ataques: ["Placaje", "Látigo", "Burbuja", "Pistola Agua"]
+    },
+    {
+      id: 8,
+      nombre: "Wartortle",
+      nivel: 16,
+      tipo: ["Agua"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      ataques: ["Placaje", "Látigo", "Burbuja", "Pistola Agua"]
+    },
+    {
+      id: 9,
+      nombre: "Blastoise",
+      nivel: 36,
+      tipo: ["Agua"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      ataques: ["Placaje", "Látigo", "Burbuja", "Pistola Agua"]
+    },
+    {
+      id: 10,
+      nombre: "Caterpie",
+      nivel: 3,
+      tipo: ["Bicho"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      ataques: ["Placaje", "Disparo Demora"]
+    },
+    {
+      id: 11,
+      nombre: "Metapod",
+      nivel: 7,
+      tipo: ["Bicho"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      ataques: ["Fortaleza"]
+    },
+    {
+      id: 12,
+      nombre: "Butterfree",
+      nivel: 10,
+      tipo: ["Bicho", "Volador"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+      ataques: ["Confusión", "Polvo Veneno", "Paralizador", "Somnífero"]
+    },
+    {
+      id: 13,
+      nombre: "Weedle",
+      nivel: 3,
+      tipo: ["Bicho", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+      ataques: ["Picotazo Veneno", "Disparo Demora"]
+    },
+    {
+      id: 14,
+      nombre: "Kakuna",
+      nivel: 7,
+      tipo: ["Bicho", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+      ataques: ["Fortaleza"]
+    },
+    {
+      id: 15,
+      nombre: "Beedrill",
+      nivel: 10,
+      tipo: ["Bicho", "Veneno"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      ataques: ["Picotazo Veneno", "Ataque Furia", "Doble Filo", "Tijera X"]
+    },
+    {
+      id: 16,
+      nombre: "Pidgey",
+      nivel: 3,
+      tipo: ["Normal", "Volador"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+      ataques: ["Placaje", "Ataque Arena"]
+    },
+    {
+      id: 17,
+      nombre: "Pidgeotto",
+      nivel: 18,
+      tipo: ["Normal", "Volador"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+      ataques: ["Placaje", "Ataque Arena", "Tornado", "Ataque Ala"]
+    },
+    {
+      id: 18,
+      nombre: "Pidgeot",
+      nivel: 36,
+      tipo: ["Normal", "Volador"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+      ataques: ["Placaje", "Ataque Arena", "Tornado", "Ataque Ala"]
+    },
+    {
+      id: 19,
+      nombre: "Rattata",
+      nivel: 3,
+      tipo: ["Normal"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+      ataques: ["Placaje", "Ataque Rápido", "Mordisco", "Hiperrayo"]
+    },
+    {
+      id: 20,
+      nombre: "Raticate",
+      nivel: 20,
+      tipo: ["Normal"],
+      objeto: "Bayas Aranja",
+      imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+      ataques: ["Placaje", "Ataque Rápido", "Mordisco", "Hiperrayo"]
+    }
+  ];
+  
+  export default pokemonData;
