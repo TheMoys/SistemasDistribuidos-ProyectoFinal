@@ -14,10 +14,15 @@ function TeamPage({ team, onRemove }) {
             <div key={pokemon.id} className={`pokemon-card ${pokemon.tipo[0]}`}>
               <img src={pokemon.imagen} alt={pokemon.nombre} />
               <h2>{pokemon.nombre}</h2>
-              <p>Nivel: {pokemon.nivel}</p>
-              <p>Tipo: {pokemon.tipo.join(", ")}</p>
-              <p>Objeto: {pokemon.objeto}</p>
-              <p>Ataques: {pokemon.ataques.join(", ")}</p>
+              <div className="info">
+                <span className="tipo">Tipo: {pokemon.tipo.join(", ")}</span>
+              </div>
+              <div className="info">
+                <span className="objeto">Objeto: {pokemon.objeto}</span>
+              </div>
+              <div className="info">
+                <span className="ataques">Ataques: {pokemon.ataques.join(", ")}</span>
+              </div>
               <button onClick={() => onRemove(pokemon)}>Eliminar del equipo</button>
             </div>
           ))}
