@@ -67,3 +67,4 @@ C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServido
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.pdb
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.genruntimeconfig.cache
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\ref\PokemonAPIServidor.dll
+C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Newtonsoft.Json.dll

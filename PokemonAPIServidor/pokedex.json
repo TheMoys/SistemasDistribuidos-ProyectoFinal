@@ -1,0 +1,48 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Bulbasaur",
+    "Nivel": 5,
+    "Tipo": [
+      "Planta",
+      "Veneno"
+    ],
+    "Objeto": "Bayas Aranja"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Charmander",
+    "Nivel": 5,
+    "Tipo": [
+      "Fuego"
+    ],
+    "Objeto": null
+  },
+  {
+    "Id": 3,
+    "Nombre": "Squirtle",
+    "Nivel": 5,
+    "Tipo": [
+      "Agua"
+    ],
+    "Objeto": null
+  },
+  {
+    "Id": 4,
+    "Nombre": "Pidgeot",
+    "Nivel": 2,
+    "Tipo": [
+      "volador"
+    ],
+    "Objeto": "string"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Raticat",
+    "Nivel": 2,
+    "Tipo": [
+      "tierra"
+    ],
+    "Objeto": "Excavar"
+  }
+]
