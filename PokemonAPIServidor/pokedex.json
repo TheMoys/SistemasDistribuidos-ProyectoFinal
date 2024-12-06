@@ -44,5 +44,32 @@
       "tierra"
     ],
     "Objeto": "Excavar"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Chikorita",
+    "Nivel": 5,
+    "Tipo": [
+      "Planta"
+    ],
+    "Objeto": "baya meloc"
+  },
+  {
+    "Id": 7,
+    "Nombre": "Totodile",
+    "Nivel": 5,
+    "Tipo": [
+      "Agua"
+    ],
+    "Objeto": "baya meloc"
+  },
+  {
+    "Id": 8,
+    "Nombre": "Cyndaquill",
+    "Nivel": 5,
+    "Tipo": [
+      "Fuego"
+    ],
+    "Objeto": "Baya"
   }
 ]

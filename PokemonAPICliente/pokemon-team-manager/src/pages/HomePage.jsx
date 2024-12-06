@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { loadDataFromFile } from '../utils/fileUtils';
+import { loadDataFromFile, addPokemonToFile } from '../utils/fileUtils';
+import AddPokemonModal from '../components/AddPokemonModal';
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -8,19 +9,29 @@ const capitalizeFirstLetter = (string) => {
 
 function HomePage({ onAddToTeam, onAddToBox }) {
   const [pokemons, setPokemons] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       const storedPokemons = await loadDataFromFile();
       setPokemons(storedPokemons);
-      console.log('POKEMOOOOOOOOOOON22222222222', storedPokemons);
     };
     fetchData();
   }, []);
 
+  const addPokemon = async (nuevoPokemon) => {
+    try {
+      const addedPokemon = await addPokemonToFile(nuevoPokemon);
+      setPokemons([...pokemons, addedPokemon]);
+    } catch (error) {
+      console.error('Error adding Pokémon:', error);
+    }
+  };
+
   return (
     <div>
       <h1>Lista de Pokémon</h1>
+      <button onClick={() => setIsModalOpen(true)}>Añadir Pokémon</button>
       <div className="pokemon-list">
         {pokemons.length > 0 ? (
           pokemons.map((pokemon) => (
@@ -43,6 +54,11 @@ function HomePage({ onAddToTeam, onAddToBox }) {
           <p>No hay Pokémon disponibles.</p>
         )}
       </div>
+      <AddPokemonModal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        onAddPokemon={addPokemon}
+      />
     </div>
   );
 }

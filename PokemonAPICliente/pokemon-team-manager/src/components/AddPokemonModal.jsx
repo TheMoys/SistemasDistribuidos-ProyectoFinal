@@ -1,46 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './AddPokemonModal.css';
 
 Modal.setAppElement('#root');
 
-function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }) {
+function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon }) {
   const [nombre, setNombre] = useState('');
   const [nivel, setNivel] = useState('');
   const [tipo, setTipo] = useState('');
   const [objeto, setObjeto] = useState('');
 
-  useEffect(() => {
-    if (pokemonToEdit) {
-      setNombre(pokemonToEdit.Nombre);
-      setNivel(pokemonToEdit.Nivel);
-      setTipo(pokemonToEdit.Tipo.join(', '));
-      setObjeto(pokemonToEdit.Objeto);
-    } else {
-      setNombre('');
-      setNivel('');
-      setTipo('');
-      setObjeto('');
-    }
-  }, [pokemonToEdit]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const nuevoPokemon = {
-      Id: pokemonToEdit ? pokemonToEdit.Id : Date.now(),
-      Nombre: nombre,
-      Nivel: parseInt(nivel),
-      Tipo: tipo.split(',').map(t => t.trim()),
-      Objeto: objeto
+      nombre,
+      nivel: parseInt(nivel),
+      tipo: tipo.split(',').map(t => t.trim()),
+      objeto
     };
-    console.log(nuevoPokemon);
     onAddPokemon(nuevoPokemon);
     onRequestClose();
   };
 
   return (
-    <Modal isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Añadir/Editar Pokémon">
-      <div className="modal-header">{pokemonToEdit ? 'Editar Pokémon' : 'Añadir Pokémon'}</div>
+    <Modal isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Añadir Pokémon">
+      <div className="modal-header">Añadir Pokémon</div>
       <form className="modal-form" onSubmit={handleSubmit}>
         <label>
           Nombre:
@@ -58,7 +42,7 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }
           Objeto:
           <input type="text" value={objeto} onChange={(e) => setObjeto(e.target.value)} />
         </label>
-        <button type="submit">{pokemonToEdit ? 'Guardar cambios' : 'Añadir'}</button>
+        <button type="submit">Añadir</button>
         <button type="button" onClick={onRequestClose}>Cancelar</button>
       </form>
     </Modal>
