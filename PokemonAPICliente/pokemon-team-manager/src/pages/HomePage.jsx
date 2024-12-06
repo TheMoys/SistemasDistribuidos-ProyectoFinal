@@ -10,6 +10,7 @@ const capitalizeFirstLetter = (string) => {
 function HomePage({ onAddToTeam, onAddToBox }) {
   const [pokemons, setPokemons] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [pokemonToEdit, setPokemonToEdit] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,6 +27,11 @@ function HomePage({ onAddToTeam, onAddToBox }) {
     } catch (error) {
       console.error('Error adding Pokémon:', error);
     }
+  };
+
+  const handleEditPokemon = (pokemon) => {
+    setPokemonToEdit(pokemon);
+    setIsModalOpen(true);
   };
 
   return (
@@ -48,6 +54,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
               </div>
               <button onClick={() => onAddToTeam(pokemon)}>Añadir al equipo</button>
               <button onClick={() => onAddToBox(pokemon)}>Añadir a la caja</button>
+              <button onClick={() => handleEditPokemon(pokemon)}>Editar</button>
             </div>
           ))
         ) : (
@@ -58,6 +65,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         onAddPokemon={addPokemon}
+        pokemonToEdit={pokemonToEdit}
       />
     </div>
   );

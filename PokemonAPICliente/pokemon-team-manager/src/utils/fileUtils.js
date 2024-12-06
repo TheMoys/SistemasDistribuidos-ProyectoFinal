@@ -14,7 +14,6 @@ export const loadDataFromFile = async () => {
 };
 
 export const addPokemonToFile = async (pokemon) => {
-  console.log('Adding Pokémon:', pokemon);
   try {
     const response = await axios.post(API_URL, pokemon, {
       headers: {
@@ -24,6 +23,16 @@ export const addPokemonToFile = async (pokemon) => {
     return response.data;
   } catch (error) {
     console.error('Error adding Pokémon:', error.response.data);
+    throw error;
+  }
+};
+
+export const getPokemonById = async (id) => {
+  try {
+    const response = await axios.get(`${API_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching Pokémon:', error.response.data);
     throw error;
   }
 };
