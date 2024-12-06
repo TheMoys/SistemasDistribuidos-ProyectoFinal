@@ -68,3 +68,38 @@ C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServido
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.genruntimeconfig.cache
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\ref\PokemonAPIServidor.dll
 C:\Users\barra\source\repos\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\appsettings.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\pokedex.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\PokemonAPIServidor.exe
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\PokemonAPIServidor.deps.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\PokemonAPIServidor.runtimeconfig.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\PokemonAPIServidor.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\PokemonAPIServidor.pdb
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.csproj.AssemblyReference.cache
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.AssemblyInfoInputs.cache
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.AssemblyInfo.cs
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.csproj.CoreCompileInputs.cache
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.sourcelink.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets\msbuild.PokemonAPIServidor.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets\msbuild.build.PokemonAPIServidor.props
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PokemonAPIServidor.props
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PokemonAPIServidor.props
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\scopedcss\bundle\PokemonAPIServidor.styles.css
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonA.0E2FB1ED.Up2Date
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\refint\PokemonAPIServidor.dll
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.pdb
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\PokemonAPIServidor.genruntimeconfig.cache
+C:\Users\diego\Dropbox\Mi PC (LAPTOP-9G9UC7BK)\Desktop\POKEMONCLIENTE\SistemasDistribuidos-ProyectoFinal\PokemonAPIServidor\obj\Debug\net8.0\ref\PokemonAPIServidor.dll
