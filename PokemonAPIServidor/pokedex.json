@@ -25,7 +25,7 @@
     "Tipo": [
       "Agua"
     ],
-    "Objeto": null
+    "Objeto": "Agua Mistica"
   },
   {
     "Id": 4,
@@ -34,16 +34,16 @@
     "Tipo": [
       "volador"
     ],
-    "Objeto": "string"
+    "Objeto": "Banda Focus"
   },
   {
     "Id": 5,
-    "Nombre": "Raticat",
+    "Nombre": "Raticate",
     "Nivel": 2,
     "Tipo": [
-      "tierra"
+      "Normal"
     ],
-    "Objeto": "Excavar"
+    "Objeto": "Cinta Elegida"
   },
   {
     "Id": 6,
