@@ -41,6 +41,16 @@ export const updatePokemonInFile = async (id, pokemon) => {
   }
 };
 
+export const deletePokemonFromFile = async (id) => {
+  try {
+    const response = await axios.delete(`${API_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error deleting Pokémon:', error.response.data);
+    throw error;
+  }
+};
+
 export const getPokemonById = async (id) => {
   try {
     const response = await axios.get(`${API_URL}/${id}`);

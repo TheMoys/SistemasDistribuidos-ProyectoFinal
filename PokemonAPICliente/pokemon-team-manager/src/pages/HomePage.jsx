@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { loadDataFromFile, addPokemonToFile, updatePokemonInFile } from '../utils/fileUtils';
+import { loadDataFromFile, addPokemonToFile, updatePokemonInFile, deletePokemonFromFile } from '../utils/fileUtils';
 import AddPokemonModal from '../components/AddPokemonModal';
 
 const capitalizeFirstLetter = (string) => {
@@ -12,11 +12,12 @@ function HomePage({ onAddToTeam, onAddToBox }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [pokemonToEdit, setPokemonToEdit] = useState(null);
 
+  const fetchData = async () => {
+    const storedPokemons = await loadDataFromFile();
+    setPokemons(storedPokemons);
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      const storedPokemons = await loadDataFromFile();
-      setPokemons(storedPokemons);
-    };
     fetchData();
   }, []);
 
@@ -35,6 +36,15 @@ function HomePage({ onAddToTeam, onAddToBox }) {
       window.location.reload();
     } catch (error) {
       console.error('Error updating Pokémon:', error);
+    }
+  };
+
+  const deletePokemon = async (id) => {
+    try {
+      await deletePokemonFromFile(id);
+      fetchData(); // Volver a cargar los datos después de eliminar
+    } catch (error) {
+      console.error('Error deleting Pokémon:', error);
     }
   };
 
@@ -64,6 +74,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
               <button onClick={() => onAddToTeam(pokemon)}>Añadir al equipo</button>
               <button onClick={() => onAddToBox(pokemon)}>Añadir a la caja</button>
               <button onClick={() => handleEditPokemon(pokemon)}>Editar</button>
+              <button onClick={() => deletePokemon(pokemon.id)}>Eliminar</button>
             </div>
           ))
         ) : (

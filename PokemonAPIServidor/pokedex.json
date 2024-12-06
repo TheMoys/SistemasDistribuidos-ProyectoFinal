@@ -62,14 +62,5 @@
       "Agua"
     ],
     "Objeto": "baya meloc"
-  },
-  {
-    "Id": 8,
-    "Nombre": "Cyndaquill",
-    "Nivel": 5,
-    "Tipo": [
-      "Fuego"
-    ],
-    "Objeto": "Baya"
   }
 ]
