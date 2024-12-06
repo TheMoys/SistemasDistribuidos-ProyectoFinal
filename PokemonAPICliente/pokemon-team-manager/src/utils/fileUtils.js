@@ -27,6 +27,20 @@ export const addPokemonToFile = async (pokemon) => {
   }
 };
 
+export const updatePokemonInFile = async (id, pokemon) => {
+  try {
+    const response = await axios.put(`${API_URL}/${id}`, pokemon, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error updating Pokémon:', error.response.data);
+    throw error;
+  }
+};
+
 export const getPokemonById = async (id) => {
   try {
     const response = await axios.get(`${API_URL}/${id}`);

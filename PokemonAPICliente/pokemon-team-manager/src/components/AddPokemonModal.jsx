@@ -4,7 +4,7 @@ import './AddPokemonModal.css';
 
 Modal.setAppElement('#root');
 
-function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }) {
+function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon, pokemonToEdit }) {
   const [nombre, setNombre] = useState('');
   const [nivel, setNivel] = useState('');
   const [tipo, setTipo] = useState('');
@@ -33,7 +33,11 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }
       tipo: tipo.split(',').map(t => t.trim()),
       objeto
     };
-    onAddPokemon(nuevoPokemon);
+    if (pokemonToEdit) {
+      onUpdatePokemon(pokemonToEdit.id, nuevoPokemon);
+    } else {
+      onAddPokemon(nuevoPokemon);
+    }
     onRequestClose();
   };
 

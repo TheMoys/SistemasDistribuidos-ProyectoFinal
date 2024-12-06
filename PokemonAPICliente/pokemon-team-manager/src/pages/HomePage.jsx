@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { loadDataFromFile, addPokemonToFile } from '../utils/fileUtils';
+import { loadDataFromFile, addPokemonToFile, updatePokemonInFile } from '../utils/fileUtils';
 import AddPokemonModal from '../components/AddPokemonModal';
 
 const capitalizeFirstLetter = (string) => {
@@ -26,6 +26,15 @@ function HomePage({ onAddToTeam, onAddToBox }) {
       setPokemons([...pokemons, addedPokemon]);
     } catch (error) {
       console.error('Error adding Pokémon:', error);
+    }
+  };
+
+  const updatePokemon = async (id, updatedPokemon) => {
+    try {
+      await updatePokemonInFile(id, updatedPokemon);
+      window.location.reload();
+    } catch (error) {
+      console.error('Error updating Pokémon:', error);
     }
   };
 
@@ -65,6 +74,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         onAddPokemon={addPokemon}
+        onUpdatePokemon={updatePokemon}
         pokemonToEdit={pokemonToEdit}
       />
     </div>
