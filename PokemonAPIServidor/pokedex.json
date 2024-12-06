@@ -16,7 +16,7 @@
     "Tipo": [
       "Fuego"
     ],
-    "Objeto": "Bayitas mutiples"
+    "Objeto": "Bayitas"
   },
   {
     "Id": 3,
@@ -44,15 +44,6 @@
       "Normal"
     ],
     "Objeto": "Cinta Elegida"
-  },
-  {
-    "Id": 6,
-    "Nombre": "Chikorita",
-    "Nivel": 5,
-    "Tipo": [
-      "Planta"
-    ],
-    "Objeto": "baya meloc"
   },
   {
     "Id": 7,

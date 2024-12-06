@@ -27,7 +27,6 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon
   const handleSubmit = (e) => {
     e.preventDefault();
     const nuevoPokemon = {
-      id: pokemonToEdit ? pokemonToEdit.id : Date.now(),
       nombre,
       nivel: parseInt(nivel),
       tipo: tipo.split(',').map(t => t.trim()),

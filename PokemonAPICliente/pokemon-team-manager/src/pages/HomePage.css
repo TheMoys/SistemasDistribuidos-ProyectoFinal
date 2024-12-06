@@ -7,6 +7,7 @@
 }
 
 .pokemon-card {
+  position: relative;
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
@@ -14,7 +15,7 @@
   width: 220px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #f9f9f9;
+  background-color: #838383;
 }
 
 .pokemon-card:hover {
@@ -51,20 +52,41 @@
   color: #000; /* Texto negro para mejor legibilidad */
 }
 
-.pokemon-card button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #b15646;
-  color: white;
-  border-radius: 4px;
+.pokemon-card .menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
 }
 
-.pokemon-card button:hover {
-  background-color: #ff4500;
-  transform: scale(1.05);
+.pokemon-card .menu-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: rgb(71, 71, 71);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.pokemon-card .menu-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pokemon-card .menu-content button:hover {
+  background-color: #cdcdcd;
+  color: black;
+}
+
+.pokemon-card:hover .menu-content {
+  display: block;
 }
 
 .add-pokemon-button {
@@ -85,8 +107,6 @@
 .add-pokemon-button:hover {
   background-color: #45a049; /* Verde más oscuro */
 }
-
-
 
 /* Colores de fondo según el tipo de Pokémon */
 .pokemon-card.Planta {
