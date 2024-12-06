@@ -1,7 +1,7 @@
 // src/utils/fileUtils.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/pokemons';
+const API_URL = 'https://localhost:7244/api/Pokemon';
 
 export const saveDataToFile = async (data) => {
   try {

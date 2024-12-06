@@ -9,37 +9,29 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }
   const [nivel, setNivel] = useState('');
   const [tipo, setTipo] = useState('');
   const [objeto, setObjeto] = useState('');
-  const [ataques, setAtaques] = useState('');
-  const [imagen, setImagen] = useState('');
 
   useEffect(() => {
     if (pokemonToEdit) {
-      setNombre(pokemonToEdit.nombre);
-      setNivel(pokemonToEdit.nivel);
-      setTipo(pokemonToEdit.tipo.join(', '));
-      setObjeto(pokemonToEdit.objeto);
-      setAtaques(pokemonToEdit.ataques.join(', '));
-      setImagen(pokemonToEdit.imagen);
+      setNombre(pokemonToEdit.Nombre);
+      setNivel(pokemonToEdit.Nivel);
+      setTipo(pokemonToEdit.Tipo.join(', '));
+      setObjeto(pokemonToEdit.Objeto);
     } else {
       setNombre('');
       setNivel('');
       setTipo('');
       setObjeto('');
-      setAtaques('');
-      setImagen('');
     }
   }, [pokemonToEdit]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const nuevoPokemon = {
-      id: pokemonToEdit ? pokemonToEdit.id : Date.now(),
-      nombre,
-      nivel: parseInt(nivel),
-      tipo: tipo.split(',').map(t => t.trim()),
-      objeto,
-      ataques: ataques.split(',').map(a => a.trim()),
-      imagen
+      Id: pokemonToEdit ? pokemonToEdit.Id : Date.now(),
+      Nombre: nombre,
+      Nivel: parseInt(nivel),
+      Tipo: tipo.split(',').map(t => t.trim()),
+      Objeto: objeto
     };
     console.log(nuevoPokemon);
     onAddPokemon(nuevoPokemon);
@@ -65,14 +57,6 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, pokemonToEdit }
         <label>
           Objeto:
           <input type="text" value={objeto} onChange={(e) => setObjeto(e.target.value)} />
-        </label>
-        <label>
-          Ataques (separados por coma):
-          <input type="text" value={ataques} onChange={(e) => setAtaques(e.target.value)} required />
-        </label>
-        <label>
-          Imagen URL:
-          <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)} required />
         </label>
         <button type="submit">{pokemonToEdit ? 'Guardar cambios' : 'Añadir'}</button>
         <button type="button" onClick={onRequestClose}>Cancelar</button>

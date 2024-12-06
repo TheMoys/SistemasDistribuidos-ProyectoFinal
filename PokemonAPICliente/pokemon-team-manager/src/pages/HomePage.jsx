@@ -19,7 +19,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
   const handleAddPokemon = async (nuevoPokemon) => {
     let updatedPokemons;
     if (pokemonToEdit) {
-      updatedPokemons = pokemons.map(p => p.id === pokemonToEdit.id ? nuevoPokemon : p);
+      updatedPokemons = pokemons.map(p => p.Id === pokemonToEdit.Id ? nuevoPokemon : p);
     } else {
       updatedPokemons = [...pokemons, nuevoPokemon];
     }
@@ -39,17 +39,16 @@ function HomePage({ onAddToTeam, onAddToBox }) {
       <button className="add-pokemon-button" onClick={() => setIsModalOpen(true)}>Añadir Pokémon</button>
       <div className="pokemon-list">
         {pokemons.map((pokemon) => (
-          <div key={pokemon.id} className={`pokemon-card ${pokemon.tipo[0]}`}>
-            <img src={pokemon.imagen} alt={pokemon.nombre} />
-            <h2>{pokemon.nombre}</h2>
+          <div key={pokemon.Id} className={`pokemon-card ${pokemon.Tipo[0]}`}>
+            <h2>{pokemon.Nombre}</h2>
             <div className="info">
-              <span className="tipo">Tipo: {pokemon.tipo.join(", ")}</span>
+              <span className="tipo">Tipo: {pokemon.Tipo.join(", ")}</span>
             </div>
             <div className="info">
-              <span className="objeto">Objeto: {pokemon.objeto}</span>
+              <span className="objeto">Objeto: {pokemon.Objeto || 'Ninguno'}</span>
             </div>
             <div className="info">
-              <span className="ataques">Ataques: {pokemon.ataques.join(", ")}</span>
+              <span className="nivel">Nivel: {pokemon.Nivel}</span>
             </div>
             <button onClick={() => onAddToTeam(pokemon)}>Añadir al equipo</button>
             <button onClick={() => onAddToBox(pokemon)}>Añadir a la caja</button>
