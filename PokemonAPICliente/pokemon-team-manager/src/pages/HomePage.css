@@ -1,9 +1,11 @@
-/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Jaro:opsz@6..72&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
   gap: 1rem;
   justify-content: center;
+  font-family: "Sour Gummy", sans-serif;
 }
 
 .pokemon-card {
@@ -16,6 +18,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   background-color: #838383;
+}
+
+.pokemon-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #d0877a;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Sour Gummy", sans-serif;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .pokemon-card:hover {
@@ -98,10 +112,16 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: "Sour Gummy", sans-serif;
   margin: 4px 4px 4px 20px;
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.3s ease;
+}
+
+.font-sour-gummy {
+  font-family: 'Sour Gummy', sans-serif;
+  margin-left: 20px;
 }
 
 .add-pokemon-button:hover {

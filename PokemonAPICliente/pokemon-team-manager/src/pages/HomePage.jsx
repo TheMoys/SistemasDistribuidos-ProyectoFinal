@@ -60,7 +60,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
 
   return (
     <div>
-      <h1>Lista de Pokémon</h1>
+      <h1 className="font-sour-gummy">Lista de Pokémon</h1>
       <button className='add-pokemon-button' onClick={() => setIsModalOpen(true)}>Añadir Pokémon</button>
       <div className="pokemon-list">
         {pokemons.length > 0 ? (

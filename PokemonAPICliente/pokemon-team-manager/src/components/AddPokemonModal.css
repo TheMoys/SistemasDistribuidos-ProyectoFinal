@@ -1,9 +1,11 @@
-/* AddPokemonModal.css */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Jaro:opsz@6..72&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 .ReactModal__Overlay {
     background-color: rgba(0, 0, 0, 0.75) !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Sour Gummy", sans-serif;
   }
   
   .ReactModal__Content {
