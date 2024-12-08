@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { loadDataFromFile, addPokemonToFile, updatePokemonInFile, deletePokemonFromFile, addPokemonToTeam } from '../utils/fileUtils';
+import { loadDataFromFile, addPokemonToFile, updatePokemonInFile, deletePokemonFromFile, addPokemonToTeam, loadTeamFromFile } from '../utils/fileUtils';
 import AddPokemonModal from '../components/AddPokemonModal';
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 };
 
-function HomePage({ onAddToTeam, onAddToBox }) {
+function HomePage({ }) {
   const [pokemons, setPokemons] = useState([]);
+  const [team, setTeam] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [pokemonToEdit, setPokemonToEdit] = useState(null);
   const [menuOpen, setMenuOpen] = useState(null);
@@ -16,6 +17,8 @@ function HomePage({ onAddToTeam, onAddToBox }) {
   const fetchData = async () => {
     const storedPokemons = await loadDataFromFile();
     setPokemons(storedPokemons);
+    const teamPokemons = await loadTeamFromFile();
+    setTeam(teamPokemons);
   };
 
   useEffect(() => {
@@ -59,9 +62,14 @@ function HomePage({ onAddToTeam, onAddToBox }) {
   };
 
   const handleAddToTeam = async (pokemon) => {
+    if (team.length >= 6) {
+      alert('No puedes tener más de 6 Pokémon en el equipo.');
+      return;
+    }
     try {
       await addPokemonToTeam(pokemon.id);
       alert('Pokémon añadido al equipo');
+      fetchData(); // Actualizar la lista de Pokémon y el equipo
     } catch (error) {
       console.error('Error adding Pokémon to team:', error);
     }
