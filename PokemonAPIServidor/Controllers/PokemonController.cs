@@ -14,6 +14,7 @@ namespace PokemonServidorREST.Controllers
     public class PokemonController : ControllerBase
     {
         private static readonly string filePath = "pokedex.json";
+        private static readonly string equipoFilePath = "equipo.json";
 
         private static List<Pokemon> LoadPokedex()
         {
@@ -53,8 +54,24 @@ namespace PokemonServidorREST.Controllers
             var json = JsonConvert.SerializeObject(pokedex, Newtonsoft.Json.Formatting.Indented);
             System.IO.File.WriteAllText(filePath, json);
         }
+        private static List<Pokemon> LoadEquipo()
+        {
+            if (!System.IO.File.Exists(equipoFilePath))
+            {
+                return new List<Pokemon>();
+            }
+            var json = System.IO.File.ReadAllText(equipoFilePath);
+            return JsonConvert.DeserializeObject<List<Pokemon>>(json);
+        }
+
+        private static void SaveEquipo(List<Pokemon> equipo)
+        {
+            var json = JsonConvert.SerializeObject(equipo, Newtonsoft.Json.Formatting.Indented);
+            System.IO.File.WriteAllText(equipoFilePath, json);
+        }
 
         private static List<Pokemon> pokedex = LoadPokedex();
+        private static List<Pokemon> equipo = LoadEquipo();
 
         [HttpGet]
         public async Task<IEnumerable<Pokemon>> Get()
@@ -124,6 +141,42 @@ namespace PokemonServidorREST.Controllers
             pokedex.Remove(pokemon);
             SavePokedex(pokedex);
             return NoContent();
+        }
+
+        [HttpGet("equipo")]
+        public async Task<IEnumerable<Pokemon>> GetEquipo()
+        {
+            return await Task.FromResult(equipo);
+        }
+
+        [HttpPost("equipo/{id}")]
+        public async Task<IActionResult> AddToEquipo(int id)
+        {
+            var pokemon = await Task.FromResult(pokedex.FirstOrDefault(p => p.Id == id));
+            if (pokemon == null)
+            {
+                return NotFound($"No se encontró un Pokémon con el ID {id}");
+            }
+            if (equipo.Count >= 6)
+            {
+                return BadRequest("El equipo ya tiene 6 Pokémon.");
+            }
+            equipo.Add(pokemon);
+            SaveEquipo(equipo);
+            return await Task.FromResult(Ok());
+        }
+
+        [HttpDelete("equipo/{id}")]
+        public async Task<IActionResult> RemoveFromEquipo(int id)
+        {
+            var pokemon = await Task.FromResult(equipo.FirstOrDefault(p => p.Id == id));
+            if (pokemon == null)
+            {
+                return NotFound($"No se encontró un Pokémon con el ID {id}");
+            }
+            equipo.Remove(pokemon);
+            SaveEquipo(equipo);
+            return await Task.FromResult(Ok());
         }
     }
 }
