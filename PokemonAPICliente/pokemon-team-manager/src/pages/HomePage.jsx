@@ -75,6 +75,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
                   </div>
                 )}
               </div>
+              <img src={pokemon.imagen} alt={pokemon.nombre} />
               <h2>{pokemon.nombre}</h2>
               <div className="info">
                 <span className="tipo">Tipo: {pokemon.tipo ? pokemon.tipo.map(capitalizeFirstLetter).join(", ") : 'Desconocido'}</span>
@@ -84,6 +85,9 @@ function HomePage({ onAddToTeam, onAddToBox }) {
               </div>
               <div className="info">
                 <span className="nivel">Nivel: {pokemon.nivel}</span>
+              </div>
+              <div className="info">
+                <span className="ataques">Ataques: {pokemon.ataques ? pokemon.ataques.join(", ") : 'Ninguno'}</span>
               </div>
               <button onClick={() => onAddToTeam(pokemon)}>Añadir al equipo</button>
               <button onClick={() => onAddToBox(pokemon)}>Añadir a la caja</button>

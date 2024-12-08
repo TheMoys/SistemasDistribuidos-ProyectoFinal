@@ -9,6 +9,8 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon
   const [nivel, setNivel] = useState('');
   const [tipo, setTipo] = useState('');
   const [objeto, setObjeto] = useState('');
+  const [ataques, setAtaques] = useState('');
+  const [imagen, setImagen] = useState('');
 
   useEffect(() => {
     if (pokemonToEdit) {
@@ -16,11 +18,15 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon
       setNivel(pokemonToEdit.nivel);
       setTipo(pokemonToEdit.tipo.join(', '));
       setObjeto(pokemonToEdit.objeto);
+      setAtaques(pokemonToEdit.ataques.join(', '));
+      setImagen(pokemonToEdit.imagen);
     } else {
       setNombre('');
       setNivel('');
       setTipo('');
       setObjeto('');
+      setAtaques('');
+      setImagen('');
     }
   }, [pokemonToEdit]);
 
@@ -30,7 +36,9 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon
       nombre,
       nivel: parseInt(nivel),
       tipo: tipo.split(',').map(t => t.trim()),
-      objeto
+      objeto,
+      ataques: ataques.split(',').map(a => a.trim()),
+      imagen
     };
     if (pokemonToEdit) {
       onUpdatePokemon(pokemonToEdit.id, nuevoPokemon);
@@ -59,6 +67,14 @@ function AddPokemonModal({ isOpen, onRequestClose, onAddPokemon, onUpdatePokemon
         <label>
           Objeto:
           <input type="text" value={objeto} onChange={(e) => setObjeto(e.target.value)} />
+        </label>
+        <label>
+          Ataques (separados por coma):
+          <input type="text" value={ataques} onChange={(e) => setAtaques(e.target.value)} required />
+        </label>
+        <label>
+          Imagen (URL):
+          <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)} required />
         </label>
         <button type="submit">{pokemonToEdit ? 'Guardar cambios' : 'Añadir'}</button>
         <button type="button" onClick={onRequestClose}>Cancelar</button>

@@ -1,0 +1,13 @@
+[
+  {
+    "Id": 2,
+    "Nombre": "Charmander",
+    "Nivel": 5,
+    "Tipo": [
+      "Fuego"
+    ],
+    "Objeto": "Bayitas",
+    "Ataques": null,
+    "Imagen": null
+  }
+]
