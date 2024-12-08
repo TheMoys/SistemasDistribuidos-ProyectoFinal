@@ -491,23 +491,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {},
+    "C:\\Users\\barra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Dropbox\\Mi PC (LAPTOP-9G9UC7BK)\\Desktop\\POKEMONCLIENTE\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\PokemonAPIServidor.csproj",
+      "projectUniqueName": "C:\\Users\\barra\\source\\repos\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\PokemonAPIServidor.csproj",
       "projectName": "PokemonAPIServidor",
-      "projectPath": "C:\\Users\\diego\\Dropbox\\Mi PC (LAPTOP-9G9UC7BK)\\Desktop\\POKEMONCLIENTE\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\PokemonAPIServidor.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Dropbox\\Mi PC (LAPTOP-9G9UC7BK)\\Desktop\\POKEMONCLIENTE\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\obj\\",
+      "projectPath": "C:\\Users\\barra\\source\\repos\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\PokemonAPIServidor.csproj",
+      "packagesPath": "C:\\Users\\barra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\barra\\source\\repos\\SistemasDistribuidos-ProyectoFinal\\PokemonAPIServidor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\barra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -516,7 +516,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -533,8 +532,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -568,7 +568,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
