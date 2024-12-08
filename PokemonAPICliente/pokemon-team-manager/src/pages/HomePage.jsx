@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { loadDataFromFile, addPokemonToFile, updatePokemonInFile, deletePokemonFromFile } from '../utils/fileUtils';
+import { loadDataFromFile, addPokemonToFile, updatePokemonInFile, deletePokemonFromFile, addPokemonToTeam } from '../utils/fileUtils';
 import AddPokemonModal from '../components/AddPokemonModal';
 
 const capitalizeFirstLetter = (string) => {
@@ -58,6 +58,15 @@ function HomePage({ onAddToTeam, onAddToBox }) {
     setMenuOpen(menuOpen === id ? null : id);
   };
 
+  const handleAddToTeam = async (pokemon) => {
+    try {
+      await addPokemonToTeam(pokemon.id);
+      alert('Pokémon añadido al equipo');
+    } catch (error) {
+      console.error('Error adding Pokémon to team:', error);
+    }
+  };
+
   return (
     <div>
       <h1 className="font-sour-gummy">Lista de Pokémon</h1>
@@ -89,8 +98,7 @@ function HomePage({ onAddToTeam, onAddToBox }) {
               <div className="info">
                 <span className="ataques">Ataques: {pokemon.ataques ? pokemon.ataques.join(", ") : 'Ninguno'}</span>
               </div>
-              <button onClick={() => onAddToTeam(pokemon)}>Añadir al equipo</button>
-              <button onClick={() => onAddToBox(pokemon)}>Añadir a la caja</button>
+              <button onClick={() => handleAddToTeam(pokemon)}>Añadir al equipo</button>
             </div>
           ))
         ) : (

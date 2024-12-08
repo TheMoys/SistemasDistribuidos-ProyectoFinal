@@ -7,7 +7,13 @@
       "Fuego"
     ],
     "Objeto": "Bayitas",
-    "Ataques": null,
-    "Imagen": null
+    "Ataques": [
+      "Arañazo",
+      "Gruñido",
+      "Ascuas",
+      "Lanzallamas"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+
   }
 ]

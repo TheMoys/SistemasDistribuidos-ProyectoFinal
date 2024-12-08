@@ -1,13 +1,100 @@
 [
   {
     "Id": 2,
+    "Nombre": "Ivysaur",
+    "Nivel": 16,
+    "Tipo": [
+      "Planta",
+      "Veneno"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Gruñido",
+      "Látigo Cepa",
+      "Polvo Veneno"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+  },
+  {
+    "Id": 4,
     "Nombre": "Charmander",
     "Nivel": 5,
     "Tipo": [
       "Fuego"
     ],
-    "Objeto": "Bayitas",
-    "Ataques": null,
-    "Imagen": null
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Arañazo",
+      "Gruñido",
+      "Ascuas",
+      "Lanzallamas"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Charmeleon",
+    "Nivel": 16,
+    "Tipo": [
+      "Fuego"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Arañazo",
+      "Gruñido",
+      "Ascuas",
+      "Lanzallamas"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+  },
+  {
+    "Id": 12,
+    "Nombre": "Butterfree",
+    "Nivel": 10,
+    "Tipo": [
+      "Bicho",
+      "Volador"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Confusión",
+      "Polvo Veneno",
+      "Paralizador",
+      "Somnífero"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+  },
+  {
+    "Id": 20,
+    "Nombre": "Raticate",
+    "Nivel": 20,
+    "Tipo": [
+      "Normal"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Ataque Rápido",
+      "Mordisco",
+      "Hiperrayo"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+  },
+  {
+    "Id": 9,
+    "Nombre": "Blastoise",
+    "Nivel": 36,
+    "Tipo": [
+      "Agua"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Látigo",
+      "Burbuja",
+      "Pistola Agua"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
   }
 ]
