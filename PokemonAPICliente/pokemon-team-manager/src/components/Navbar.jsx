@@ -9,7 +9,6 @@ function Navbar() {
       <div className="menu">
         <Link to="/">Home</Link>
         <Link to="/team">Team</Link>
-        <Link to="/box">Box</Link>
       </div>
     </nav>
   );
