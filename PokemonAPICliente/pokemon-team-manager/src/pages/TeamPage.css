@@ -1,9 +1,16 @@
-/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Jaro:opsz@6..72&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.font-sour-gummy {
+  font-family: 'Sour Gummy', sans-serif;
+  margin-left: 20px;
 }
 
 .pokemon-card {

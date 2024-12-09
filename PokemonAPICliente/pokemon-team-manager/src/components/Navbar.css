@@ -1,11 +1,12 @@
-/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Jaro:opsz@6..72&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #59a7f5;
     padding: 1rem;
     border-radius: 5px;
+    font-family: "Sour Gummy", sans-serif;
   }
   
   .navbar a {

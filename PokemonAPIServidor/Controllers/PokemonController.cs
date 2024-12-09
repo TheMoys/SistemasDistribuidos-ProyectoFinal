@@ -14,17 +14,35 @@ namespace PokemonServidorREST.Controllers
     public class PokemonController : ControllerBase
     {
         private static readonly string filePath = "pokedex.json";
+        private static readonly string equipoFilePath = "equipo.json";
 
         private static List<Pokemon> LoadPokedex()
         {
             if (!System.IO.File.Exists(filePath))
             {
                 return new List<Pokemon>
-                {
-                    new Pokemon { Id = 1, Nombre = "Bulbasaur", Nivel = 5, Tipo = new List<string> { "Planta", "Veneno" }, Objeto = "Bayas Aranja" },
-                    new Pokemon { Id = 2, Nombre = "Charmander", Nivel = 5, Tipo = new List<string> { "Fuego" }, Objeto = null },
-                    new Pokemon { Id = 3, Nombre = "Squirtle", Nivel = 5, Tipo = new List<string> { "Agua" }, Objeto = null }
-                };
+        {
+            new Pokemon { Id = 1, Nombre = "Bulbasaur", Nivel = 5, Tipo = new List<string> { "Planta", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" },
+            new Pokemon { Id = 2, Nombre = "Ivysaur", Nivel = 16, Tipo = new List<string> { "Planta", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" },
+            new Pokemon { Id = 3, Nombre = "Venusaur", Nivel = 32, Tipo = new List<string> { "Planta", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Gruñido", "Látigo Cepa", "Polvo Veneno" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" },
+            new Pokemon { Id = 4, Nombre = "Charmander", Nivel = 5, Tipo = new List<string> { "Fuego" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Arañazo", "Gruñido", "Ascuas", "Lanzallamas" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" },
+            new Pokemon { Id = 5, Nombre = "Charmeleon", Nivel = 16, Tipo = new List<string> { "Fuego" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Arañazo", "Gruñido", "Ascuas", "Lanzallamas" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" },
+            new Pokemon { Id = 6, Nombre = "Charizard", Nivel = 36, Tipo = new List<string> { "Fuego", "Volador" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Arañazo", "Gruñido", "Ascuas", "Lanzallamas" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" },
+            new Pokemon { Id = 7, Nombre = "Squirtle", Nivel = 5, Tipo = new List<string> { "Agua" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Látigo", "Burbuja", "Pistola Agua" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" },
+            new Pokemon { Id = 8, Nombre = "Wartortle", Nivel = 16, Tipo = new List<string> { "Agua" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Látigo", "Burbuja", "Pistola Agua" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" },
+            new Pokemon { Id = 9, Nombre = "Blastoise", Nivel = 36, Tipo = new List<string> { "Agua" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Látigo", "Burbuja", "Pistola Agua" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" },
+            new Pokemon { Id = 10, Nombre = "Caterpie", Nivel = 3, Tipo = new List<string> { "Bicho" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Disparo Demora" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" },
+            new Pokemon { Id = 11, Nombre = "Metapod", Nivel = 7, Tipo = new List<string> { "Bicho" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Fortaleza" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" },
+            new Pokemon { Id = 12, Nombre = "Butterfree", Nivel = 10, Tipo = new List<string> { "Bicho", "Volador" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Confusión", "Polvo Veneno", "Paralizador", "Somnífero" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" },
+            new Pokemon { Id = 13, Nombre = "Weedle", Nivel = 3, Tipo = new List<string> { "Bicho", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Picotazo Veneno", "Disparo Demora" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" },
+            new Pokemon { Id = 14, Nombre = "Kakuna", Nivel = 7, Tipo = new List<string> { "Bicho", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Fortaleza" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" },
+            new Pokemon { Id = 15, Nombre = "Beedrill", Nivel = 10, Tipo = new List<string> { "Bicho", "Veneno" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Picotazo Veneno", "Ataque Furia", "Doble Filo", "Tijera X" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" },
+            new Pokemon { Id = 16, Nombre = "Pidgey", Nivel = 3, Tipo = new List<string> { "Normal", "Volador" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Ataque Arena" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" },
+            new Pokemon { Id = 17, Nombre = "Pidgeotto", Nivel = 18, Tipo = new List<string> { "Normal", "Volador" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Ataque Arena", "Tornado", "Ataque Ala" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" },
+            new Pokemon { Id = 18, Nombre = "Pidgeot", Nivel = 36, Tipo = new List<string> { "Normal", "Volador" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Ataque Arena", "Tornado", "Ataque Ala" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" },
+            new Pokemon { Id = 19, Nombre = "Rattata", Nivel = 3, Tipo = new List<string> { "Normal" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Ataque Rápido", "Mordisco", "Hiperrayo" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" },
+            new Pokemon { Id = 20, Nombre = "Raticate", Nivel = 20, Tipo = new List<string> { "Normal" }, Objeto = "Bayas Aranja", Ataques = new List<string> { "Placaje", "Ataque Rápido", "Mordisco", "Hiperrayo" }, Imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" }
+        };
             }
 
             var json = System.IO.File.ReadAllText(filePath);
@@ -36,8 +54,24 @@ namespace PokemonServidorREST.Controllers
             var json = JsonConvert.SerializeObject(pokedex, Newtonsoft.Json.Formatting.Indented);
             System.IO.File.WriteAllText(filePath, json);
         }
+        private static List<Pokemon> LoadEquipo()
+        {
+            if (!System.IO.File.Exists(equipoFilePath))
+            {
+                return new List<Pokemon>();
+            }
+            var json = System.IO.File.ReadAllText(equipoFilePath);
+            return JsonConvert.DeserializeObject<List<Pokemon>>(json);
+        }
+
+        private static void SaveEquipo(List<Pokemon> equipo)
+        {
+            var json = JsonConvert.SerializeObject(equipo, Newtonsoft.Json.Formatting.Indented);
+            System.IO.File.WriteAllText(equipoFilePath, json);
+        }
 
         private static List<Pokemon> pokedex = LoadPokedex();
+        private static List<Pokemon> equipo = LoadEquipo();
 
         [HttpGet]
         public async Task<IEnumerable<Pokemon>> Get()
@@ -88,6 +122,8 @@ namespace PokemonServidorREST.Controllers
             pokemon.Nivel = pokemonActualizado.Nivel;
             pokemon.Tipo = pokemonActualizado.Tipo;
             pokemon.Objeto = pokemonActualizado.Objeto;
+            pokemon.Ataques = pokemonActualizado.Ataques; 
+            pokemon.Imagen = pokemonActualizado.Imagen;
 
             SavePokedex(pokedex);
             return NoContent();
@@ -105,6 +141,42 @@ namespace PokemonServidorREST.Controllers
             pokedex.Remove(pokemon);
             SavePokedex(pokedex);
             return NoContent();
+        }
+
+        [HttpGet("equipo")]
+        public async Task<IEnumerable<Pokemon>> GetEquipo()
+        {
+            return await Task.FromResult(equipo);
+        }
+
+        [HttpPost("equipo/{id}")]
+        public async Task<IActionResult> AddToEquipo(int id)
+        {
+            var pokemon = await Task.FromResult(pokedex.FirstOrDefault(p => p.Id == id));
+            if (pokemon == null)
+            {
+                return NotFound($"No se encontró un Pokémon con el ID {id}");
+            }
+            if (equipo.Count >= 6)
+            {
+                return BadRequest("El equipo ya tiene 6 Pokémon.");
+            }
+            equipo.Add(pokemon);
+            SaveEquipo(equipo);
+            return await Task.FromResult(Ok());
+        }
+
+        [HttpDelete("equipo/{id}")]
+        public async Task<IActionResult> RemoveFromEquipo(int id)
+        {
+            var pokemon = await Task.FromResult(equipo.FirstOrDefault(p => p.Id == id));
+            if (pokemon == null)
+            {
+                return NotFound($"No se encontró un Pokémon con el ID {id}");
+            }
+            equipo.Remove(pokemon);
+            SaveEquipo(equipo);
+            return await Task.FromResult(Ok());
         }
     }
 }

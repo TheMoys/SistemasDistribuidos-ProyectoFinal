@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Jaro:opsz@6..72&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sour Gummy", sans-serif;
+  }
+  
+  .ReactModal__Content {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  .modal-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .modal-form button:hover {
+    background-color: #45a049;
+  }

@@ -1,11 +1,32 @@
 // TeamPage.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './TeamPage.css';
+import { loadTeamFromFile, removePokemonFromTeam } from '../utils/fileUtils';
 
-function TeamPage({ team, onRemove }) {
+function TeamPage() {
+  const [team, setTeam] = useState([]);
+
+  const fetchTeamData = async () => {
+    const teamPokemons = await loadTeamFromFile();
+    setTeam(teamPokemons);
+  };
+
+  useEffect(() => {
+    fetchTeamData();
+  }, []);
+
+  const handleRemove = async (pokemon) => {
+    try {
+      await removePokemonFromTeam(pokemon.id);
+      fetchTeamData(); // Volver a cargar los datos después de eliminar
+    } catch (error) {
+      console.error('Error removing Pokémon from team:', error);
+    }
+  };
+
   return (
     <div>
-      <h1>Equipo Pokémon</h1>
+      <h1 className="font-sour-gummy">Equipo Pokémon</h1>
       {team.length === 0 ? (
         <p>No hay Pokémon en el equipo</p>
       ) : (
@@ -23,7 +44,7 @@ function TeamPage({ team, onRemove }) {
               <div className="info">
                 <span className="ataques">Ataques: {pokemon.ataques.join(", ")}</span>
               </div>
-              <button onClick={() => onRemove(pokemon)}>Eliminar del equipo</button>
+              <button onClick={() => handleRemove(pokemon)}>Eliminar del equipo</button>
             </div>
           ))}
         </div>
