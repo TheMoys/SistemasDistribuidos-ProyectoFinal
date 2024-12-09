@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "EQeMbp13xReJp42WvIoqrsqoa2/Ls9JHK0de3B2GHvU=",
+  "Hash": "5XHTEPYI602dl94cyYgbJ6wfX8d93rbOFOofAnSvpVY=",
   "Source": "PokemonAPIServidor",
   "BasePath": "_content/PokemonAPIServidor",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

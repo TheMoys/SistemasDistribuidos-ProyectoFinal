@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "Id": 3,
+    "Nombre": "Venusaur",
+    "Nivel": 32,
+    "Tipo": [
+      "Planta",
+      "Veneno"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Gruñido",
+      "Látigo Cepa",
+      "Polvo Veneno"
+    ],
+    "Imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Charizard",
+    "Nivel": 36,
+    "Tipo": [
+      "Fuego",
+      "Volador"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Arañazo",
+      "Gruñido",
+      "Ascuas",
+      "Lanzallamas"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+  },
+  {
+    "Id": 1,
+    "Nombre": "Bulbasaur",
+    "Nivel": 10,
+    "Tipo": [
+      "Planta",
+      "Veneno"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Gruñido",
+      "Látigo Cepa",
+      "Polvo Veneno"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+  },
+  {
+    "Id": 12,
+    "Nombre": "Butterfree",
+    "Nivel": 10,
+    "Tipo": [
+      "Bicho",
+      "Volador"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Confusión",
+      "Polvo Veneno",
+      "Paralizador",
+      "Somnífero"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+  },
+  {
+    "Id": 18,
+    "Nombre": "Pidgeot",
+    "Nivel": 36,
+    "Tipo": [
+      "Normal",
+      "Volador"
+    ],
+    "Objeto": "Bayas Aranja",
+    "Ataques": [
+      "Placaje",
+      "Ataque Arena",
+      "Tornado",
+      "Ataque Ala"
+    ],
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
+  }
+]
