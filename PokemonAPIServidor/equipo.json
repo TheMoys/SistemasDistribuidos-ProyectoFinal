@@ -17,23 +17,6 @@
     "Imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png"
   },
   {
-    "Id": 6,
-    "Nombre": "Charizard",
-    "Nivel": 36,
-    "Tipo": [
-      "Fuego",
-      "Volador"
-    ],
-    "Objeto": "Bayas Aranja",
-    "Ataques": [
-      "Arañazo",
-      "Gruñido",
-      "Ascuas",
-      "Lanzallamas"
-    ],
-    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
-  },
-  {
     "Id": 1,
     "Nombre": "Bulbasaur",
     "Nivel": 10,
